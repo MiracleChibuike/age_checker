@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Cabin+Condensed&family=Dancing+Script&family=Jost&family=Kalam&family=Kanit&family=Noto+Sans+Display:wght@600&family=Odibee+Sans&family=PT+Sans+Narrow&family=Sansita+Swashed:wght@300..900&family=Slabo+27px&family=Syne:wght@400..800&family=Ubuntu:wght@500&family=Yesteryear&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Jost", serif;
+
+        }
+
+        .main {
+            background: linear-gradient(rgba(0, 6, 9, 0), rgba(13, 14, 13, 0.4)),
+                url(https://media.istockphoto.com/id/1914628146/photo/waterfall-pipe-creek-falls-cass-county-indiana.webp?a=1&b=1&s=612x612&w=0&k=20&c=WmAft_HQ6E61_jqsP_GOw_G8eRY3w5IU551jB1RVYQw=) no-repeat center center/cover;
+            display: grid;
+            place-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .calculator_Body {
+            background: rgb(120, 120, 120, 0.5);
+            box-shadow: 0 0 50px #010101;
+            padding: 50px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+        }
+
+        .calculator_Body>div {
+            margin: 25px 0;
+        }
+
+        #Age_calc {
+            color: #f3eeee;
+        }
+
+        .calculator_Body div input {
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        ::placeholder {
+            font-size: 13px;
+        }
+
+        #check_Data {
+            width: 100%;
+            padding: 15px 0;
+            border: none;
+            background: linear-gradient(rgb(40, 30, 70, 0.3), rgba(78, 9, 216, 0.5));
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* #displaY_Data{
+            word-break: break-all;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="calculator_Body">
+            <h2 id="Age_calc"></h2>
+            <div class="input_Year">
+                <input type="number" id="year_Input" placeholder="Enter Your Birth Year">
+            </div>
+            <!-- For input Month -->
+            <div class="input_Month">
+                <input type="number" id="month_Input" placeholder="Enter your Birth Month">
+            </div>
+            <h3 id="displaY_Data"></h3>
+            <!-- Div for button -->
+            <div class="button_Check">
+                <button id="check_Data">Calculate Age</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
